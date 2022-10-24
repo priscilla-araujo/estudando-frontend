@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style2.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="img">
+            <img src="./images/illustration-thank-you.svg" />
+        </div>
+        <p id="msn">You selected <span id="valor"></span> out of 5</p>
+        <div>
+            <h3>Thank you!</h3>
+            <p id="text">We appreciate you talking the time to give a rating. If you ever need more support, don't
+                hesitate to get in touch!</p>
+        </div>
+
+    </div>
+
+    <script>
+        const id = localStorage.getItem('id')
+        document.querySelector('#valor').textContent = id
+    </script>
+</body>
+
+</html>
